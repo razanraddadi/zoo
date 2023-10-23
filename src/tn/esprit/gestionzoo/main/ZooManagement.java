@@ -48,6 +48,10 @@ public class ZooManagement {
 
         System.out.println("-------------------------------------------------------");
         Aquatic aquatic = new Aquatic("Fish", "Sardine", 2, true, "Sea");
+        Aquatic aquaticTest = new Aquatic("shark", "white", 7, true, "Sea");
+        Aquatic aquatic1 = new Aquatic("Famille1", "Nom1", 5, true, "Habitat1");
+        Aquatic aquatic2 = new Aquatic("Famille2", "Nom2", 3, false, "Habitat2");
+
         Terrestrial terrestrial = new Terrestrial("Panda", "Narla", 4, true, 2);
         Dolphin dolphin = new Dolphin("Delphinidae", "Flipper", 5, true, "Ocean", 14.5f);
         Penguin penguin = new Penguin("Spheniscidae", "Skipper", 3, true, "Ocean", 25.3f);
@@ -63,6 +67,15 @@ public class ZooManagement {
         aquatic.swim();
         dolphin.swim();
         penguin.swim();
+        myZoo.displayNumberOfAquaticsByType();
+        //System.out.println(aquatic.equals(aquaticTest));
+        boolean areEqual = aquatic1.equals(aquatic2);
+        if (areEqual) {
+            System.out.println("ils sont égaux.");
+        } else {
+            System.out.println("ils ne sont pas égaux.");
+        }
+        //System.out.println(aquatic.equals());
 
     }
 

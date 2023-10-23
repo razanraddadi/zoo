@@ -121,7 +121,7 @@ public class Zoo {
         }
     }
     public float maxPenguinSwimmingDepth() {
-        float maxDepth = Float.MIN_VALUE; 
+        float maxDepth = Float.MIN_VALUE;
 
         for (int i = 0; i < aquaticAnimalCount; i++) {
             if (aquaticAnimals[i] instanceof Penguin) {
@@ -149,15 +149,5 @@ public class Zoo {
         System.out.println("Nombre de dauphins dans le zoo : " + dolphinCount);
         System.out.println("Nombre de pingouins dans le zoo : " + penguinCount);
     }
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
-        Aquatic other = (Aquatic) obj;
-        return getName().equals(other.getName()) ;
-    }
+
 }
