@@ -13,7 +13,7 @@ public non-sealed class Aquatic extends Animal {
     }
 
 
-    public void swim() {
+   public void swim() {
         System.out.println("This aquatic animal is swimming.");
     }
 

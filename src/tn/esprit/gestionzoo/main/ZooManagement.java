@@ -13,6 +13,9 @@ public class ZooManagement {
 
         Zoo myZoo = new Zoo("Wildlife Park", "Ariana");
         Zoo notMyZoo = new Zoo("WaterPark", "Siliana");
+        myZoo.addAquaticAnimal(new Aquatic("crevettes", "chev", 1, true, "mer"));
+        myZoo.addAquaticAnimal(new Aquatic("dauphin", "dauf", 5, true, "zoo"));
+        myZoo.addAquaticAnimal(new Aquatic("shark", "tigershark", 4, false, "mer"));
 
 
         Animal dog = new Animal("Canine", "Snoopy", 2, true);
@@ -62,5 +65,6 @@ public class ZooManagement {
         penguin.swim();
 
     }
+
 
 }
