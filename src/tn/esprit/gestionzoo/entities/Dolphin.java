@@ -1,6 +1,6 @@
 package tn.esprit.gestionzoo.entities;
-
-public class Dolphin extends Aquatic {
+import tn.esprit.gestionzoo.entities.Food;
+public  class Dolphin extends Aquatic {
     //public void swim(){}
     private float swimmingSpeed;
 
@@ -28,5 +28,9 @@ public class Dolphin extends Aquatic {
     @Override
     public String toString() {
         return super.toString() + ", swimmingSpeed:" + swimmingSpeed;
+    }
+    @Override
+    public void eatMeat(Food meat) {
+
     }
 }

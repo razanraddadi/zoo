@@ -1,5 +1,5 @@
 package tn.esprit.gestionzoo.entities;
-
+import tn.esprit.gestionzoo.entities.Food;
 public class Penguin extends Aquatic {
 
 
@@ -22,6 +22,10 @@ public class Penguin extends Aquatic {
     }
     public float getSwimmingDepth() {
         return swimmingDepth;
+    }
+    @Override
+    public void eatMeat(Food meat) {
+        System.out.println("The penguin " + getName() + " is eating " + meat);
     }
 
 }
